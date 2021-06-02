@@ -5,6 +5,7 @@
 	"scripts": {
 		"clean": "rimraf 'dist'",
 		"start": "cd dist && node server.js",
+		"dev": "cd dist && nodemon server.js",
 		"build": "babel src --out-dir dist",
 		"watch": "babel -w src --out-dir dist"
 	},
@@ -16,6 +17,7 @@
 		"babel-plugin-transform-export-extensions": "^6.22.0",
 		"babel-plugin-transform-object-rest-spread": "^6.26.0",
 		"babel-preset-env": "^1.6.1",
+		"nodemon": "2.0.7",
 		"rimraf": "^2.6.2"
 	},
 	"dependencies": {
