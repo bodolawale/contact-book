@@ -17,7 +17,7 @@ export default class Authentication {
 
 			const decoded = resolveToken(token);
 
-			const user = User.findOne({ _id: decoded._id });
+			const user = await User.findOne({ _id: decoded._id });
 			if (!user) return res.status(400).json({ message: "Invalid token" });
 
 			req.user = user;

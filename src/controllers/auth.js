@@ -1,7 +1,6 @@
 import User from "../entities/user";
 import { generateToken } from "../utils/utility";
 import logger from "../utils/logger";
-import { response } from "express";
 
 /**
  * Given a json request
